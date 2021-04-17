@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários e Links</title>
+    <style>
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align-last: center;
+    background-image: linear-gradient(to left, dodgerblue, royalblue);
+    font-weight: normal;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+a {
+    background-color: gold;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+    border-radius: 10px 20px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 7em;
+}
+#tb1 {
+    border-radius: 35px;
+    width: max-content;
+    align-content: left;
+}
+table{
+    width: auto;
+    color: white;
+    background-color: white;
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19);
+    border-radius: 10px 20px;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 7em;
+}
+    </style>
+</head>
+
+<body id="corpo">
+    <div class="container">
+        <table class="centered bordered responsive-table highlight" id="tb1">
+            <thead>
+                <tr>
+                    <th colspan="1" scope="colgroup">HORÁRIOS</th>
+                    <th colspan="1" scope="colgroup">SEGUNDA</th>
+                    <th colspan="1" scope="colgroup">TERÇA</th>
+                    <th colspan="1" scope="colgroup">QUARTA</th>
+                    <th colspan="1" scope="colgroup">QUINTA</th>
+                    <th colspan="1" scope="colgroup">SEXTA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">13:00 - 13:45</td>  
+                    <th><a href="https://meet.google.com/vbw-hhgk-qkm">INGLÊS</a></th>
+                    <th><a href="https://meet.google.com/tey-ymsm-twr">ID. CULTURAL</a></th>
+                    <th><a href="https://meet.google.com/tey-ymsm-twr">SOCIOLOGIA</a></th>
+                    <th><a href="https://meet.google.com/ozz-fmns-mot">FILOSOFIA</a></th>
+                    <th><a href="https://meet.google.com/ifo-dzku-chq">MATEMÁTICA</a></th>
+                </tr>
+                <tr>
+                    <th scope="row">13:45 - 14:30</th>
+                    <th><a href="https://meet.google.com/vbw-hhgk-qkm">INGLÊS</a></th>
+                    <th><a href="https://meet.google.com/pum-doke-iwt">BIOLOGIA</a></th>
+                    <th><a href="https://meet.google.com/xsx-wten-vxa">ED.FÍSICA</a></th>
+                    <th><a href="https://meet.google.com/ozz-fmns-mot">ARTES</a></th>
+                    <th><a href="https://meet.google.com/mgb-rkzb-kpn">QUÍMICA</a></th>
+                </tr>
+                <tr>
+                    <th scope="row">14:30 - 15:15</th>
+                    <th><a href="https://meet.google.com/vbw-hhgk-qkm">PORTUGUÊS</a></th>
+                    <th><a href="https://meet.google.com/pum-doke-iwt">BIOLOGIA</a></th>
+                    <th><a href="https://meet.google.com/xsx-wten-vxa">ED.FÍSICA</a></th>
+                    <th><a href="https://meet.google.com/tey-ymsm-twr">ARTES</a></th>
+                    <th><a href="https://meet.google.com/mgb-rkzb-kpn">QUIMÍCA</a></th>
+                </tr>
+                <tr>
+                    <th scope="row">15:30 - 17:00</th>
+                    <th><a href="https://meet.google.com/vbw-hhgk-qkm">PORTUGUÊS</a></th>
+                    <th><a href="https://meet.google.com/tey-ymsm-twr">FÍSICA</a></th>
+                    <th><a href="https://meet.google.com/ifo-dzku-chq">MATEMÁTICA</a></th>
+                    <th><a href="https://meet.google.com/tey-ymsm-twr">GEOGRAFIA</a></th>
+                    <th><a href="https://meet.google.com/pof-kpnv-ggg">HISTÓRIA</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script LANGUAGE="JAVASCRIPT">
+        var now = new Date();
+        var mName = now.getMonth() +1 ;
+        var dName = now.getDay() +1;
+        var dayNr = now.getDate();
+        var yearNr=now.getYear();
+        if(dName==1) {Day = "Domingo";}
+        if(dName==2) {Day = "Segunda-feira";}
+        if(dName==3) {Day = "Terça-feira";}
+        if(dName==4) {Day = "Quarta-feira";}
+        if(dName==5) {Day = "Quinta-feira";}
+        if(dName==6) {Day = "Sexta-feira";}
+        if(dName==7) {Day = "Sábado";}
+        if(mName==1){Month = "Janeiro";}
+        if(mName==2){Month = "Fevereiro";}
+        if(mName==3){Month = "Março";}
+        if(mName==4){Month = "Abril";}
+        if(mName==5){Month = "Maio";}
+        if(mName==6){Month = "Junho";}
+        if(mName==7){Month = "Julho";}
+        if(mName==8){Month = "Agosto";}
+        if(mName==9){Month = "Setembro";}
+        if(mName==10){Month = "Outubro";}
+        if(mName==11){Month = "Novembro";}
+        if(mName==12){Month = "Dezembro";}
+        if(yearNr < 2000) {Year = 1900 + yearNr;}
+        else {Year = yearNr;}
+        var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
+        
+        document.write('  '+todaysDate);
+        </script>
+        <SPAN ID="Clock">00:00:00</SPAN>
+        <script LANGUAGE="JavaScript">
+          var Elem = document.getElementById("Clock");
+          function Horario(){ 
+            var Hoje = new Date(); 
+            var Horas = Hoje.getHours(); 
+            if(Horas < 10){ 
+              Horas = "0"+Horas; 
+            } 
+            var Minutos = Hoje.getMinutes(); 
+            if(Minutos < 10){ 
+              Minutos = "0"+Minutos; 
+            } 
+            var Segundos = Hoje.getSeconds(); 
+            if(Segundos < 10){ 
+              Segundos = "0"+Segundos; 
+            } 
+            Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+            } 
+            window.setInterval("Horario()",1000);
+        </SCRIPT>
+</body>
+</html>
